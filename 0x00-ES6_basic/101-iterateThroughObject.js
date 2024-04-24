@@ -1,7 +1,9 @@
-iexport default function iterateThroughObject(reportWithIterator) {
-  const returnString = [];
+export default function iterateThroughObject(reportWithIterator) {
+  const resString = [];
+
   for (const report of reportWithIterator) {
-    returnString.push(report);
+    resString.push(report);
   }
-  return returnString.join(' | ');
+
+  return resString.join(' | ');
 }
